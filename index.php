@@ -1,7 +1,7 @@
 <?php
     $bodyID = 'index-page';
     $currentPage = 'index';
-    require('/require-ressources/header/navbar.php');
+    require('require-ressources/header/navbar.php');
 
 ?>
     <div id="landing-content">
