@@ -1,6 +1,6 @@
 <?php
-require('navbar.php');
-require ('header.php');
+require('/require-ressources/header/navbar.php');
+require ('/require-ressources/header/header.php');
 
 for ($i = 1; $i <= 10; $i++) {
     if ($i % 2 == 0) {
