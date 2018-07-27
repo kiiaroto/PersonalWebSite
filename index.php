@@ -1,6 +1,6 @@
 <?php
-    
-    require('navbar.html');
+    $bodyID = 'index-page';
+    require('navbar.php');
 
 ?>
     <div id="landing-content">

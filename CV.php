@@ -1,6 +1,6 @@
 <?php
     
-    require('navbar.html');
+    require('navbar.php');
     require ('header.php');
 
 ?>

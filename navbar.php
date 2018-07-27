@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<?php 
+    if(!isset($bodyID)) {
+        $bodyID = '';
+    }
+?>
+
+<body id="<?= $bodyID ?>">
     <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-dark">
         <div class="container-fluid"><a class="navbar-brand font-weight-bold" href="#">Dylan OMAN</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div

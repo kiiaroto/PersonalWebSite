@@ -3,11 +3,8 @@ html {
   height:100%;
 }
 
-#index-page {
-  overflow:hidden;
-}
-
 body {
+  overflow:hidden;
   height:100%;
   width:100%;
 }
