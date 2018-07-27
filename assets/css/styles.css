@@ -1,0 +1,139 @@
+html {
+  width:100%;
+  height:100%;
+}
+
+body {
+  overflow:hidden;
+  height:100%;
+  width:100%;
+}
+
+.nav-item {
+  margin-right:30px;
+  margin-left:30px;
+}
+
+.navbar.navbar-light.navbar-expand-md {
+  border-bottom:1px solid rgb(255,255,255);
+}
+
+@media (min-width: 300px) {
+  #home-main {
+    text-align:center;
+    padding:40px;
+    padding-top:55%;
+    height:100%;
+    width:100%;
+  }
+}
+
+@media (min-width: 576px) {
+  #home-main {
+    text-align:center;
+    padding:40px;
+    padding-top:45%;
+    height:100%;
+    width:100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #home-main {
+    text-align:center;
+    padding:40px;
+    padding-top:35%;
+    height:100%;
+    width:100%;
+  }
+}
+
+@media (min-width: 992px) {
+  #home-main {
+    text-align:center;
+    padding:40px;
+    padding-top:20%;
+    height:100%;
+    width:100%;
+  }
+}
+
+#home-main .jumbotron {
+  border-radius:20px;
+  padding:40px;
+  background-color:rgba(255,255,255,0.70);
+}
+
+#landing-content {
+  background-image:url(../../assets/img/background-picture2.jpeg);
+  width:100%;
+  padding-bottom:700px;
+  background-position:center;
+  background-size:120% 120%;
+  background-repeat:no-repeat;
+}
+
+.navbar-light .navbar-brand {
+  color:rgba(255,255,255,0.9);
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color:rgba(255,255,255,0.9);
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color:rgba(255,255,255,.9);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color:rgba(255,255,255,.7);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:rgba(255,255,255,.5);
+}
+
+.sr-only {
+  color:rgba(255,255,255,0.5);
+}
+
+.navbar-light .navbar-toggler-icon {
+  color:rgba(255,255,255,0.5);
+}
+
+.top-text {
+  text-align:center;
+  padding:40px;
+  padding-top:150px;
+  background:url('../../assets/img/background-picture2.jpeg');
+  background-size:cover;
+  padding-bottom:150px;
+}
+
+@media (min-width: 992px) {
+  .top-text {
+    padding-right:140px;
+    padding-left:140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-text {
+    padding-right:250px;
+    padding-left:250px;
+  }
+}
+
+.top-text .jumbotron {
+  border-radius:20px;
+  padding:40px;
+  background-color:rgba(255,255,255,0.7);
+  margin:0 auto;
+}
+
+@media (max-width: 991px) {
+  .top-text .jumbotron {
+    padding:20px;
+  }
+}
+
