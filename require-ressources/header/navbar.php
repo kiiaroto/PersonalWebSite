@@ -13,6 +13,9 @@
     if(!isset($bodyID)) {
         $bodyID = '';
     }
+    if(!isset($currentPage)) {
+        $currentPage = 'index';
+    }
 ?>
 
 <body id="<?= $bodyID ?>">
@@ -21,9 +24,9 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active font-weight-bold" href="index.php">Accueil</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="projets.php">Projets</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link font-weight-bold" href="CV.php">CV</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link <?= ($currentPage == 'index') ? 'active' : '' ?> font-weight-bold" href="index.php">Accueil</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link <?= ($currentPage == 'projets') ? 'active' : '' ?> font-weight-bold" href="projets.php">Projets</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link <?= ($currentPage == 'CV') ? 'active' : '' ?> font-weight-bold" href="CV.php">CV</a></li>
                 </ul>
         </div>
         </div>

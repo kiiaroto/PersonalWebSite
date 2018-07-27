@@ -1,5 +1,6 @@
 <?php
     $bodyID = 'index-page';
+    $currentPage = 'index';
     require('/require-ressources/header/navbar.php');
 
 ?>
