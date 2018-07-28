@@ -19,6 +19,7 @@ body {
 
 .navbar.navbar-light.navbar-expand-md {
   border-bottom:1px solid rgb(255,255,255);
+  transition:all 0.25s ease;
 }
 
 @media (min-width: 300px) {
@@ -112,6 +113,7 @@ body {
   background-size:cover;
   padding-bottom:150px;
   margin-bottom:100px;
+  position:relative;
 }
 
 @media (min-width: 992px) {
@@ -141,8 +143,18 @@ body {
   }
 }
 
+.navbar.navbar-light.navbar-expand-md.fixed-top.navbar-dark.past-header {
+  background-color:#06397a;
+}
+
+#past-header {
+  position:absolute;
+  padding:30px;
+  bottom:0px;
+}
+
 .text-col {
-  padding:15px;
+  padding:15px 15px 15px 15px;
   position:relative;
 }
 
@@ -204,5 +216,9 @@ hr {
   position:absolute;
   bottom:30px;
   right:15px;
+}
+
+.projet-text {
+  padding-bottom:40px;
 }
 
