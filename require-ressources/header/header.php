@@ -1,6 +1,6 @@
 <?php
 
-require('require-ressources/header/navbar.php');
+require('navbar.php');
 
 ?>
 
