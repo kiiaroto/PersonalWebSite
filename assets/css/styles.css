@@ -222,3 +222,50 @@ hr {
   padding-bottom:40px;
 }
 
+.list-unstyled.header-list {
+  font-weight:bold;
+  margin-left:35px;
+}
+
+.list-unstyled.item-list {
+  font-weight:normal;
+  margin:0;
+  margin-left:15px;
+}
+
+.header-list > li {
+  margin-bottom:10px;
+  margin-top:10px;
+}
+
+.row.projet-information {
+  padding-bottom:50px;
+}
+
+.container.projet-x {
+  /*border:1px solid rgba(153, 153, 153, 0.2);*/
+}
+
+.col.projet-description {
+  border-right:1px solid rgba(153, 153, 153, 0.2);
+}
+
+.projet-description p {
+  color:#878787;
+}
+
+.projet-description a {
+  color:white;
+  background:#06397a;
+  padding:12px;
+  border-radius:50px;
+  text-decoration:initial;
+  padding-right:30px;
+  padding-left:30px;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fas.fa-link {
+  margin-left:15px;
+}
+
