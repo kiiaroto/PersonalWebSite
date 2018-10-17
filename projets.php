@@ -1,8 +1,11 @@
 <?php
+ include 'require-ressources/dao.php';
 $currentPage = 'projets';
 require ('require-ressources/header/header.php');
 
-$imagePath = '/images/projets/2018-05-20_18-04-30.png'
+$imagePath = '/images/projets/2018-05-20_18-04-30.png';
+
+$projets = getProjectList();
 ?>
 
 
@@ -11,16 +14,16 @@ $imagePath = '/images/projets/2018-05-20_18-04-30.png'
 
 
         <?php
-        for ($i = 1; $i <= 10; $i++) {
-            if ($i % 2 == 1) {
+        foreach ($projets as $p) {
+            if ($p['id'] % 2 == 1) {
                 ?>
                 <div class="row odd-number">
                     <div class="col-md-12 col-lg-7 text-col">
-                        <h1 class="projet-title">Projet <?= $i ?></h1>
-                        <p class="projet-text"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in elit sollicitudin, sagittis lectus sed, congue mauris. Suspendisse felis ante, luctus eu semper vitae, pretium nec nisi.<br></p>
-                        <div class="text-right text-link"><a href="projet.php">Plus d'information</a></div>
+                        <h1 class="projet-title"><?= $p['title'] ?></h1>
+                        <p class="projet-text"><br><?= $p['description'] ?><br></p>
+                        <div class="text-right text-link"><a href="projet.php?id=<?= $p['id'] ?>">Plus d'information</a></div>
                     </div>
-                    <div class="col-md-12 col-lg-5 text-center picture-col"><a href="projet.php"><img class="rounded img-fluid image" src="<?= $imagePath ?>"><div class="over-picture"><p class="text-over-picture font-weight-bold">Click ici pour plus d'informations</p></div></a></div>
+                    <div class="col-md-12 col-lg-5 text-center picture-col"><a href="projet.php?id=<?= $p['id'] ?>"><img class="rounded img-fluid image" src="<?= $imagePath ?>"><div class="over-picture"><p class="text-over-picture font-weight-bold">Click ici pour plus d'informations</p></div></a></div>
                 </div>
                 <hr>
                 <?php
@@ -28,11 +31,11 @@ $imagePath = '/images/projets/2018-05-20_18-04-30.png'
                 ?>
                 <div class="row even-number">
                     <div class="col-md-12 col-lg-7 order-lg-2 text-col">
-                        <h1 class="projet-title">Projet <?= $i ?></h1>
-                        <p class="projet-text"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in elit sollicitudin, sagittis lectus sed, congue mauris. Suspendisse felis ante, luctus eu semper vitae, pretium nec nisi.<br></p>
-                        <div class="text-right text-link"><a href="projet.php">Plus d'information</a></div>
+                        <h1 class="projet-title"><?= $p['title'] ?></h1>
+                        <p class="projet-text"><br><?= $p['description'] ?><br></p>
+                        <div class="text-right text-link"><a href="projet.php?id=<?= $p['id'] ?>">Plus d'information</a></div>
                     </div>
-                    <div class="col-md-12 col-lg-5 order-lg-1 text-center picture-col"><a href="projet.php"><img class="rounded img-fluid image" src="<?= $imagePath ?>"><div class="over-picture"><p class="text-over-picture font-weight-bold">Click ici pour plus d'informations</p></div></a></div>
+                    <div class="col-md-12 col-lg-5 order-lg-1 text-center picture-col"><a href="projet.php?id=<?= $p['id'] ?>"><img class="rounded img-fluid image" src="<?= $imagePath ?>"><div class="over-picture"><p class="text-over-picture font-weight-bold">Click ici pour plus d'informations</p></div></a></div>
                 </div>
                 <hr>
                 <?php
