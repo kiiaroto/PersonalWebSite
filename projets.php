@@ -14,7 +14,7 @@ $projets = getProjectList();
 
 
         <?php
-        foreach ($projets as $p) {
+        foreach (array_reverse($projets) as $p) {
             if ($p['id'] % 2 == 1) {
                 ?>
                 <div class="row odd-number">
